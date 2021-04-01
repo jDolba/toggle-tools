@@ -14,6 +14,8 @@
         }
     },
     "require": {
-        "symfony/console": "^5.2"
+        "symfony/console": "^5.2",
+        "league/csv": "^9.7",
+        "symfony/finder": "^5.2"
     }
 }
