@@ -1,4 +1,12 @@
 #!/usr/bin/env php
 <?php declare(strict_types=1);
 
-echo 42;
+require __DIR__.'/../vendor/autoload.php';
+
+use App\ToggleCsvToDailyReportCommand;
+use Symfony\Component\Console\Application;
+
+$application = new Application();
+$application->add(new ToggleCsvToDailyReportCommand());
+
+$application->run();

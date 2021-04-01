@@ -1,10 +1,19 @@
 {
     "name": "jdolba/toggle-tools",
+    "description": "Toggle Helper",
+    "type": "project",
     "authors": [
         {
             "name": "Jakub Dolba",
             "email": "jakub@dolba.cz"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        }
+    },
+    "require": {
+        "symfony/console": "^5.2"
+    }
 }
