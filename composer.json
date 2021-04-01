@@ -1,0 +1,10 @@
+{
+    "name": "jdolba/toggle-tools",
+    "authors": [
+        {
+            "name": "Jakub Dolba",
+            "email": "jakub@dolba.cz"
+        }
+    ],
+    "require": {}
+}

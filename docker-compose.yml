@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+    app:
+        tty: true
+        build:
+            context: .
+            dockerfile: Dockerfile
+            target: base
+        container_name: app
+        volumes:
+            - .:/var/www/html
