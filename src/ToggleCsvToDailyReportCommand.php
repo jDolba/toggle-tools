@@ -45,7 +45,7 @@ class ToggleCsvToDailyReportCommand extends Command
             $csvReader->setHeaderOffset(0);
             $dayTimeSheets = $this->loadTimesheet($csvReader);
 
-            $writer = Writer::createFromPath($file->getRealPath() . '.out', 'w+');
+            $writer = Writer::createFromPath($file->getRealPath() . '.out.csv', 'w+');
             $this->writeTimesheet($dayTimeSheets, $writer);
 
             $output->writeln('...done.');
